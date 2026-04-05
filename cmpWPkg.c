@@ -113,12 +113,12 @@ static int RegisterVariable(Tcl_Interp* interp, const char* ns, const VarTable* 
 int Tclcompiler_Init(Tcl_Interp* interp)
 {
 #ifdef USE_TCL_STUBS
-    if (!Tcl_InitStubs(interp, TCL_VERSION, 1))
+    if (!Tcl_InitStubs(interp, TCL_VERSION, 0))
     {
         return TCL_ERROR;
     }
 #else
-    if (Tcl_PkgRequire(interp, "Tcl", TCL_VERSION, 1) == NULL)
+    if (Tcl_PkgRequire(interp, "Tcl", TCL_VERSION, 0) == NULL)
     {
         return TCL_ERROR;
     }
