@@ -84,7 +84,7 @@ Tcl_FreeInternalRep(Tcl_Obj *objPtr) {
  * The version of the tbcload package needed to load scripts compiled by this
  * version of the compiler.
  */
-#define TBCLOAD_VERSION "2.0"
+#define TBCLOAD_VERSION "2.0a0"
 
 /*
  * This macro includes code that emits and reads the location map for a
